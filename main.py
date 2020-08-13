@@ -16,11 +16,11 @@ if __name__ == '__main__':
     Netease_msg = net_sign.run()
 
     # SockBoom签到
-    sockboom = SockBoom(token_url=token_url)
-    SockBoom_msg = sockboom.get_response_msg()
+    # sockboom = SockBoom(token_url=token_url)
+    # SockBoom_msg = sockboom.get_response_msg()
 
-    context = '网易云签到结果如下:\n' + Netease_msg + '\nSockBoom签到结果如下:\n' + SockBoom_msg
-
+    # context = '网易云签到结果如下:\n' + Netease_msg + '\nSockBoom签到结果如下:\n' + SockBoom_msg
+    context = '网易云签到结果如下:\n' + Netease_msg
     # 发送邮件
     s = SendEmail()
     s.setContent(subject='尊敬的用户您好! ', body=context)
