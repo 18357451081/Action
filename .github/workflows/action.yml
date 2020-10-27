@@ -21,8 +21,7 @@ jobs:
         run: python -m pip install --upgrade DecryptLogin
       - name: 'main'
         env:
-          NETEASE_USERNAME: ${{ secrets.NETEASE_USERNAME }}
-          NETEASE_PASSWORD: ${{ secrets.NETEASE_PASSWORD }}
+          SCKEY_CODE: ${{ secrets.SCKEY_CODE }}
           AUTHORIZATION_CODE: ${{ secrets.AUTHORIZATION_CODE }}
           SOCKBOOM_TOKEN: ${{ secrets.SOCKBOOM_TOKEN }}
         run: python main.py
