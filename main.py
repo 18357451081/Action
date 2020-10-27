@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # username = os.environ['NETEASE_USERNAME']
     # password = os.environ['NETEASE_PASSWORD']
     token_url = os.environ['SOCKBOOM_TOKEN']
-    sckey = os.environ['SCKEY']
+    sckey = os.environ['SCKEY_CODE']
 
     tools = Tools('SockBoom的签到',sckey)
     tools.log(sckey)
