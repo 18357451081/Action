@@ -17,7 +17,7 @@ if __name__ == '__main__':
     sckey = os.environ['SCKEY']
 
     tools = Tools('SockBoom的签到',sckey)
-
+    tools.log(sckey)
     # 网易云音乐签到
     # try:
     #     net_sign = NeteaseSignin(username=username, password=password)

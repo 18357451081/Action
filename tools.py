@@ -32,19 +32,6 @@ class Tools():
     '''
     def diyText(self,content):
         self.content = content
-        today = datetime.date.today()
-        kaoyan_day = datetime.date(2020,12,21) #2021考研党的末日
-        date = (kaoyan_day - today).days
-        one = requests.get('https://api.qinor.cn/soup/').text # 每日一句的api
-
-        self.content = (
-            "------\n"
-            "#### 账户信息\n"
-            "------\n"
-            "------\n"
-            "#### 考研倒计时\n- 距考研还有" + str(date) + "天，主人要加油学习啊！\n\n"
-			"------\n"
-            "#### 今日一句\n- " + one + "\n\n")
 
     '''
     打印日志
