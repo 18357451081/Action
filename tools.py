@@ -12,7 +12,7 @@ class Tools():
         # 本Tools的名称
         self.name = name
 
-    def server(self,content=None):
+    def server(self,content):
             if self.sckey == '':
                 return
             url = 'https://sc.ftqq.com/' + self.sckey + '.send'
