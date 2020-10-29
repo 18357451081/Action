@@ -20,6 +20,7 @@ if __name__ == '__main__':
     tools.log(sckey)
 
     # SockBoom签到
+    sockboom_msg = "消息未空(异常)!"
     try:
         sockboom = SockBoom(token_url=token_url)
         sockboom_msg = sockboom.get_response_msg()
