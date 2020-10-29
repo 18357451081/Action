@@ -2,9 +2,9 @@ import requests
 
 
 class SockBoom():
-    def __init__(self, token_url):
+    def __init__(self, token):
         # 获取外部的token的链接,访问并签到
-        url = token_url
+        url = '	https://api.sockboom.cc/client/checkin?token={}'.format(token)
         requestHead = {'User-Agent': 'Chrome/83.0.4103.116 Safari/537.36'}
         r = requests.get(url, headers=requestHead)
 

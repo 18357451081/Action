@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # 获取外部变量
     # username = os.environ['NETEASE_USERNAME']
     # password = os.environ['NETEASE_PASSWORD']
-    token_url = os.environ['SOCKBOOM_TOKEN']
+    token = os.environ['SOCKBOOM_TOKEN']
     sckey = os.environ['SCKEY_CODE']
 
     tools = Tools('SockBoom的签到',sckey)
@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # SockBoom签到
     sockboom_msg = "消息未空(异常)!"
     try:
-        sockboom = SockBoom(token_url=token_url)
+        sockboom = SockBoom(token=token)
         sockboom_msg = sockboom.get_response_msg()
     except Exception:
         tools.log('SockBoom签到 异常')
