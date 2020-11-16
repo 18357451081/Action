@@ -5,7 +5,7 @@ import os
 import traceback
 
 # from sendEmail import SendEmail
-from signin import NeteaseSignin
+# from signin import NeteaseSignin
 from sock_sign import SockBoom
 from tools import Tools
 
@@ -40,7 +40,4 @@ if __name__ == '__main__':
             "#### SockBoom签到结果\n"
             + "- " + context + "\n\n" +
             "------\n"
-            "#### 考研倒计时\n- 距考研还有" + str(date) + "天，主人要加油学习啊！\n\n"
-			"------\n"
-            "#### 今日一句\n- " + one + "\n\n")
-    tools.server(content)
+            "#### 考研倒计时\n- 距考研还有" + str(date) + "天，主人要加
